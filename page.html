@@ -28,7 +28,8 @@
   .hero { text-align:center; padding:4px 0 5px 0; border-bottom:2.5px solid #10243E; }
   .hero h1 {
     font-family:"Noto Serif", serif; font-weight:900; color:#10243E;
-    font-size:80px; line-height:0.86; letter-spacing:-1px; margin:0;
+    font-size:66px; line-height:0.86; letter-spacing:-1px; margin:0;
+    white-space:nowrap;
   }
   .hero h1 .yr { color:#c0272d; }
   .strapline {
@@ -42,7 +43,7 @@
   .panel + .panel { border-left:1px solid #c9bfa5; }
   .panel:first-child { padding-left:0; }
   .panel:last-child { padding-right:0; }
-  .panel svg.art { display:block; width:100%; height:44px; }
+  .panel svg.art { display:block; width:100%; height:34px; }
   .numcirc {
     position:absolute; top:6px; left:8px; width:23px; height:23px; border-radius:50%;
     background:#c0272d; color:#fff; font-weight:800; font-size:14px;
@@ -50,9 +51,9 @@
     border:1.5px solid #f7f1e3;
   }
   .panel:first-child .numcirc { left:0; }
-  .kicker { font-size:10.5px; font-weight:800; letter-spacing:1.4px; color:#c0272d; margin:3px 0 1px 0; white-space:nowrap; }
+  .kicker { font-size:11px; font-weight:800; letter-spacing:1.4px; color:#c0272d; margin:3px 0 1px 0; white-space:nowrap; }
   .panel h2 { font-family:"Noto Serif", serif; font-weight:800; font-size:21.5px; line-height:1.03; color:#10243E; margin:0 0 3px 0; }
-  .panel p { font-size:12.4px; line-height:1.13; margin:0; color:#232d38; }
+  .panel p { font-size:13.2px; line-height:1.14; margin:0; color:#232d38; }
 
   /* ---------- Modules ---------- */
   .modules { display:grid; grid-template-columns:1fr 1fr 1fr; border-bottom:2px solid #10243E; }
@@ -65,23 +66,23 @@
   .mod .kicker { margin:0 0 2px 0; }
   .mod .kicker b { color:#10243E; }
   .mod h3 { font-family:"Noto Serif", serif; font-weight:800; font-size:17.5px; line-height:1.02; color:#10243E; margin:0 0 2px 0; }
-  .mod p { font-size:11.9px; line-height:1.10; margin:0; color:#232d38; }
+  .mod p { font-size:12.8px; line-height:1.12; margin:0; color:#232d38; }
   .mnum { color:#c0272d; }
 
   /* ---------- By the numbers ---------- */
   .numbers {
     display:flex; align-items:center; gap:14px;
-    border-bottom:2px solid #10243E; padding:3px 0 4px 0;
+    border-bottom:2px solid #10243E; padding:2px 0 3px 0;
   }
   .numbers .lbl { font-size:11px; font-weight:800; letter-spacing:1.6px; color:#c0272d; white-space:nowrap; line-height:1.25; }
   .numitem { display:flex; align-items:center; gap:7px; flex:1; }
   .numitem .big { font-family:"Noto Serif", serif; font-weight:900; font-size:25px; color:#10243E; white-space:nowrap; line-height:1; }
-  .numitem .cap { font-size:10px; line-height:1.15; color:#3c4652; }
+  .numitem .cap { font-size:11px; line-height:1.15; color:#3c4652; }
 
   /* ---------- Bottom split ---------- */
   .bottom { display:flex; gap:16px; flex:1; min-height:0; padding-top:4px; }
-  .leftcol { width:43%; display:flex; flex-direction:column; }
-  .rightcol { width:57%; display:flex; flex-direction:column; }
+  .leftcol { width:36%; display:flex; flex-direction:column; }
+  .rightcol { width:64%; display:flex; flex-direction:column; }
   .colhead { font-size:12px; font-weight:800; letter-spacing:1.4px; color:#10243E; margin:0 0 3px 0; white-space:nowrap; }
   .colhead .red { color:#c0272d; }
   .mapwrap { position:relative; width:100%; flex:1; min-height:0; }
@@ -97,9 +98,9 @@
     background:#10243E; transform:translate(-50%,-50%);
     border:1px solid #f7f1e3; box-shadow:0 0 0 1.5px #f7f1e3; z-index:2;
   }
-  .mapcap { font-size:10.5px; font-style:italic; font-family:"Noto Serif", serif; color:#3c4652; margin-top:3px; }
+  .mapcap { font-size:11.5px; font-style:italic; font-family:"Noto Serif", serif; color:#3c4652; margin-top:3px; }
   .microlist { columns:2; column-gap:14px; flex:1; min-height:0; overflow:hidden; }
-  .microlist div { font-size:10.2px; line-height:1.13; color:#232d38; margin:0 0 2px 0; break-inside:avoid; }
+  .microlist div { font-size:13px; line-height:1.10; color:#232d38; margin:0 0 1.5px 0; break-inside:avoid; }
   .microlist b { color:#10243E; }
   .microlist .n { color:#c0272d; font-weight:800; }
 
@@ -166,7 +167,7 @@
     <div class="numcirc">1</div>
     <div class="kicker">1 &middot; MIDDLE EAST &middot; CONFLICT</div>
     <h2>US and Iran trade fire over Bahrain and Qeshm</h2>
-    <p>US forces sank five Iranian tankers and struck an IRGC missile base on Qeshm Island; Iran hit Hormuz shipping and fired missiles at the US Al-Azraq base in Jordan, and Bahrain intercepted six drones at US radar sites.</p>
+    <p>US forces sank five Iranian tankers and struck an IRGC base on Qeshm Island; Iran hit Hormuz shipping and fired missiles at a US base in Jordan. Bahrain intercepted six drones.</p>
   </article>
 
   <article class="panel">
@@ -238,7 +239,7 @@
   <article class="mod">
     <div class="kicker"><span class="mnum">6</span> <b>&middot; EUROPE &middot; UKRAINE AID</b></div>
     <h3>EU proposes a &euro;45bn loan for Ukraine</h3>
-    <p>The loan would cover about two-thirds of Kyiv&rsquo;s &euro;70bn 2027 gap and is repaid only if Russia pays reparations.</p>
+    <p>The loan would cover about two-thirds of Kyiv&rsquo;s &euro;70bn 2027 gap, repaid only if Russia pays reparations.</p>
   </article>
   <article class="mod">
     <div class="kicker"><span class="mnum">7</span> <b>&middot; SOUTH ASIA &middot; WEATHER</b></div>
@@ -248,7 +249,7 @@
   <article class="mod">
     <div class="kicker"><span class="mnum">8</span> <b>&middot; UNITED STATES &middot; MARKETS</b></div>
     <h3>Wall Street slides as the Dow drops 849 points</h3>
-    <p>The S&amp;P 500 closed at its lowest since late July, a fourth straight fall; a BofA survey cut tech overweighting from 37% to 12%, the biggest monthly drop since 2006, rotating into gold. Brent $93.14.</p>
+    <p>The S&amp;P 500 closed at its lowest since late July, a fourth straight fall; a BofA survey cut tech overweighting from 37% to 12%, rotating into gold. Brent $93.14.</p>
   </article>
   <article class="mod">
     <div class="kicker"><span class="mnum">9</span> <b>&middot; UNITED STATES &middot; BUSINESS</b></div>
@@ -291,21 +292,21 @@
   <div class="rightcol">
     <p class="colhead">ALSO ON WEDNESDAY 18 NOVEMBER <span class="red">&mdash; 25 MORE STORIES</span></p>
     <div class="microlist">
-      <div><span class="n">10.</span> <b>Gaza warning</b> &mdash; UN: cold and flooding threaten 1.7M displaced</div>
+      <div><span class="n">10.</span> <b>Gaza warning</b> &mdash; floods threaten 1.7M displaced</div>
       <div><span class="n">11.</span> <b>Siberia crash</b> &mdash; An-12 down in the Kemerovo region; all 19 aboard killed</div>
-      <div><span class="n">12.</span> <b>Voyager 1</b> &mdash; first craft one light-day from Earth, 25.9bn km out</div>
+      <div><span class="n">12.</span> <b>Voyager 1</b> &mdash; first craft one light-day from Earth</div>
       <div><span class="n">13.</span> <b>Measles status lost</b> &mdash; US posts its worst year since 1991</div>
-      <div><span class="n">14.</span> <b>GTA VI eve</b> &mdash; queues form as the game launches Thursday on record pre-orders</div>
+      <div><span class="n">14.</span> <b>GTA VI eve</b> &mdash; queues form for Thursday&rsquo;s launch</div>
       <div><span class="n">15.</span> <b>Bond casting</b> &mdash; Robert Pattinson named the next James Bond</div>
       <div><span class="n">16.</span> <b>North Korea</b> &mdash; ballistic missile fired toward the Sea of Japan</div>
-      <div><span class="n">17.</span> <b>COP31 Antalya</b> &mdash; decisive phase opens with 144 disputed items</div>
-      <div><span class="n">18.</span> <b>Cyberattack</b> &mdash; supermarket freezers disabled in seven European countries</div>
+      <div><span class="n">17.</span> <b>COP31 Antalya</b> &mdash; decisive phase opens, 144 disputed items</div>
+      <div><span class="n">18.</span> <b>Cyberattack</b> &mdash; freezers disabled in seven countries</div>
       <div><span class="n">19.</span> <b>US outages</b> &mdash; Apple services and the NSA hit by tech failures</div>
       <div><span class="n">20.</span> <b>Venezuela report</b> &mdash; State Dept counts $12bn in oil and mineral revenue</div>
       <div><span class="n">21.</span> <b>France protests</b> &mdash; a fourth weekend of cost-of-living marches</div>
       <div><span class="n">22.</span> <b>Waymo</b> &mdash; driverless taxis pulled from all US freeways</div>
       <div><span class="n">23.</span> <b>Romania quake</b> &mdash; 5.3 magnitude tremor recorded</div>
-      <div><span class="n">24.</span> <b>Settler sanctions</b> &mdash; Britain and Australia list Israeli settler firms</div>
+      <div><span class="n">24.</span> <b>Settler sanctions</b> &mdash; Britain and Australia list settler firms</div>
       <div><span class="n">25.</span> <b>Telegram blocked</b> &mdash; Jordan and Iraq block the app</div>
       <div><span class="n">26.</span> <b>China&ndash;Canada</b> &mdash; Beijing cuts tariffs as Xi meets Carney</div>
       <div><span class="n">27.</span> <b>Dhoni retires</b> &mdash; ends a 19-year IPL career; mentors CSK</div>
@@ -315,7 +316,7 @@
       <div><span class="n">31.</span> <b>Senegal qualify</b> &mdash; first team into AFCON 2027</div>
       <div><span class="n">32.</span> <b>Pochettino farewell</b> &mdash; final US match before the Man Utd job</div>
       <div><span class="n">33.</span> <b>Chess milestone</b> &mdash; Germany&rsquo;s first Olympiad medal in 26 years</div>
-      <div><span class="n">34.</span> <b>ODI decider</b> &mdash; Australia face England in the series decider</div>
+      <div><span class="n">34.</span> <b>ODI decider</b> &mdash; Australia face England for the series</div>
     </div>
   </div>
 </section>
