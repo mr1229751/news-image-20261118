@@ -10,63 +10,62 @@
     background:#FBF9F5; color:#111111;
     font-family:"Noto Sans", "Liberation Sans", sans-serif;
     padding:0 14px;
-    display:flex; flex-direction:column; gap:6px;
+    display:flex; flex-direction:column; gap:4px;
   }
   b, strong { font-weight:700; }
-  .kicker { color:#B81D13; font-weight:700; font-size:16px; letter-spacing:2px; line-height:1.1; }
+  .kicker { color:#B81D13; font-weight:700; font-size:16px; letter-spacing:2px; line-height:1.05; }
 
   /* ---------- Masthead ---------- */
-  header { height:64px; border-bottom:4px solid #111; display:flex; align-items:center; justify-content:space-between; }
-  header h1 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:900; font-size:43px; margin:0; line-height:1; white-space:nowrap; }
-  .tagline { font-size:16px; font-weight:700; letter-spacing:1.2px; color:#1B365D; margin-top:3px; white-space:nowrap; }
-  .datepill { background:#111; color:#fff; font-weight:700; font-size:18px; padding:8px 13px; border-radius:22px; white-space:nowrap; text-align:center; line-height:1.2; }
+  header { height:60px; border-bottom:4px solid #111; display:flex; align-items:center; justify-content:space-between; }
+  header h1 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:900; font-size:40px; margin:0; line-height:1; white-space:nowrap; }
+  .tagline { font-size:16px; font-weight:700; letter-spacing:1.2px; color:#1B365D; margin-top:2px; white-space:nowrap; }
+  .datepill { background:#111; color:#fff; font-weight:700; font-size:18px; padding:9px 13px; border-radius:22px; white-space:nowrap; line-height:1.1; }
 
   /* ---------- Global Pulse ---------- */
   .pulse { height:38px; display:flex; gap:6px; }
-  .pulse div { flex:1; border:2px solid #111; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:700; white-space:nowrap; padding:0 3px; overflow:hidden; }
+  .pulse div { flex:1; border:2px solid #111; display:flex; flex-direction:column; align-items:center; justify-content:center; font-size:16px; font-weight:700; white-space:nowrap; overflow:hidden; line-height:1.12; }
+  .pulse .lbl { color:#1B365D; }
   .pulse .neg { color:#B81D13; }
-  .pulse span.lbl { color:#1B365D; margin-right:4px; }
 
   /* ---------- Hero ---------- */
-  .hero { height:248px; display:flex; gap:10px; border-bottom:2px solid #111; padding-bottom:4px; overflow:hidden; }
-  .lead { width:618px; border-right:1px solid #ccc; padding-right:10px; overflow:hidden; }
-  .lead h2 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:800; font-size:37px; line-height:1.03; margin:3px 0 4px 0; }
-  .lead .sub { font-size:17px; line-height:1.16; color:#222; margin:0 0 5px 0; }
+  .hero { height:272px; display:flex; gap:10px; border-bottom:2px solid #111; overflow:hidden; }
+  .lead { width:640px; border-right:1px solid #ccc; padding-right:10px; overflow:hidden; }
+  .lead h2 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:800; font-size:34px; line-height:1.02; margin:2px 0 3px 0; }
+  .lead .sub { font-size:17px; line-height:1.12; color:#222; margin:0 0 4px 0; }
   .lead ul { margin:0; padding-left:17px; }
-  .lead li { font-size:16px; line-height:1.17; margin-bottom:3px; }
+  .lead li { font-size:16px; line-height:1.1; margin:0; }
 
   .markets { flex:1; overflow:hidden; }
-  .markets h3 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:700; font-size:22px; line-height:1.1; margin:2px 0 3px 0; }
-  .markets .sub { font-size:16px; line-height:1.16; margin:0 0 3px 0; color:#222; }
-  .markets p { font-size:16px; line-height:1.17; margin:0 0 3px 0; }
+  .markets h3 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:700; font-size:22px; line-height:1.08; margin:2px 0 3px 0; }
+  .markets .sub { font-size:16px; line-height:1.12; margin:0 0 3px 0; color:#222; }
+  .markets p { font-size:16px; line-height:1.12; margin:0 0 3px 0; }
 
   /* ---------- Map band ---------- */
-  .mapband { height:154px; border-bottom:2px solid #111; overflow:hidden; }
-  .maphead { display:flex; justify-content:space-between; align-items:baseline; font-size:16px; font-weight:700; white-space:nowrap; }
-  .maphead .ttl { color:#B81D13; letter-spacing:.5px; }
-  .maphead .badges { color:#1B365D; }
-  .mapwrap { position:relative; height:74px; margin-top:1px; }
+  .mapband { height:144px; border-bottom:2px solid #111; overflow:hidden; }
+  .maphead { text-align:center; font-size:16px; font-weight:700; white-space:nowrap; color:#1B365D; line-height:1.15; }
+  .maphead .ttl { color:#B81D13; }
+  .mapwrap { position:relative; height:66px; }
   .pin { position:absolute; width:22px; height:22px; border-radius:50%; color:#fff; font-size:13px; font-weight:700;
          display:flex; align-items:center; justify-content:center; transform:translate(-50%,-50%); border:1.5px solid #fff; z-index:2; }
   .pin.red { background:#B81D13; } .pin.navy { background:#1B365D; } .pin.teal { background:#117864; }
-  .inset { display:flex; gap:10px; border-top:1px solid #bbb; margin-top:2px; padding-top:3px; align-items:center; }
-  .inset .ititle { font-size:16px; font-weight:700; color:#B81D13; white-space:nowrap; }
+  .inset { display:flex; gap:10px; border-top:1px solid #bbb; padding-top:2px; align-items:center; }
+  .inset .ititle { font-size:16px; font-weight:700; color:#B81D13; white-space:nowrap; line-height:1.15; }
   .inset .legend { display:flex; gap:14px; flex:1; }
-  .inset .legend div { font-size:16px; line-height:1.18; white-space:nowrap; }
+  .inset .legend div { font-size:16px; line-height:1.14; white-space:nowrap; }
   .inset .legend b { color:#B81D13; }
 
   /* ---------- Module grid ---------- */
-  .modules { height:264px; display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:1fr 1fr; border-bottom:2px solid #111; }
-  .mod { padding:5px 8px 2px 8px; overflow:hidden; border-left:1px solid #ddd; }
+  .modules { height:302px; display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:1fr 1fr; border-bottom:2px solid #111; }
+  .mod { padding:3px 8px 2px 8px; overflow:hidden; border-left:1px solid #ddd; }
   .mod:nth-child(4n+1) { border-left:none; padding-left:0; }
-  .mod h4 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:700; font-size:19.5px; line-height:1.08; margin:0 0 3px 0; }
-  .mod p { font-size:16px; line-height:1.13; margin:0; }
+  .mod h4 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:700; font-size:18.5px; line-height:1.06; margin:0 0 2px 0; }
+  .mod p { font-size:16px; line-height:1.12; margin:0; }
 
   /* ---------- Micro cards ---------- */
-  .micros { height:204px; display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:repeat(3,1fr); border-bottom:2px solid #111; }
-  .micro { padding:4px 8px 2px 8px; overflow:hidden; border-left:1px solid #ddd; border-top:1px solid #eee; }
-  .micro:nth-child(4n+1) { border-left:none; padding-left:0; }
-  .micro h5 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:700; font-size:16.5px; line-height:1.07; margin:0 0 2px 0; }
+  .micros { height:168px; display:grid; grid-template-columns:repeat(6,1fr); grid-template-rows:92px 76px; border-bottom:2px solid #111; }
+  .micro { padding:3px 6px 2px 7px; overflow:hidden; border-left:1px solid #ddd; }
+  .micro:nth-child(6n+1) { border-left:none; padding-left:0; }
+  .micro h5 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:700; font-size:16.5px; line-height:1.06; margin:0 0 2px 0; }
   .micro p { font-size:16px; line-height:1.1; margin:0; color:#222; }
   .micro .cat { color:#B81D13; }
 
@@ -84,10 +83,10 @@
 </header>
 
 <section class="pulse">
-  <div><span class="lbl">DOW:</span><span class="neg">-849 PTS</span>&nbsp;(Intraday -1,000+)</div>
-  <div><span class="lbl">BRENT:</span>$93.14 / BBL (Hormuz Shock)</div>
-  <div><span class="lbl">TECH ALLOC:</span>37% TO 12% (BofA Survey)</div>
-  <div><span class="lbl">GAZA DISPLACED:</span>1.7 MILLION (UN Alert)</div>
+  <div><span class="lbl">DOW INDUSTRIALS</span><span><span class="neg">-849 PTS</span> (Intraday -1,000+)</span></div>
+  <div><span class="lbl">BRENT CRUDE</span><span>$93.14 / BBL (Hormuz Shock)</span></div>
+  <div><span class="lbl">TECH ALLOCATION</span><span>37% TO 12% (BofA Survey)</span></div>
+  <div><span class="lbl">GAZA DISPLACED</span><span>1.7 MILLION (UN Winter Alert)</span></div>
 </section>
 
 <section class="hero">
@@ -109,36 +108,33 @@
     <p class="sub">S&amp;P 500 breaks 200-day average to late-July low as Brent hits $93.14.</p>
     <p><b>WALL STREET:</b> Dow dropped 1,000+ points intraday before closing down 849.</p>
     <p><b>FUND EXODUS:</b> BofA: tech overweight slashed 37% to 12% — biggest monthly drop since 2006 — rotating into gold.</p>
-    <svg width="336" height="58" viewBox="0 0 336 58">
-      <line x1="4" y1="24" x2="200" y2="24" stroke="#B81D13" stroke-width="2" stroke-dasharray="6 4"/>
-      <text x="4" y="16" font-size="16" font-weight="bold" fill="#B81D13">200-DAY MA</text>
-      <polyline points="4,10 45,13 85,9 125,17 160,23 185,36 200,46" fill="none" stroke="#111" stroke-width="3"/>
-      <text x="96" y="56" font-size="16" font-weight="bold" fill="#1B365D">LATE JULY LOW</text>
-      <rect x="238" y="14" width="22" height="34" fill="#1B365D"/>
-      <rect x="296" y="37" width="22" height="11" fill="#B81D13"/>
-      <text x="234" y="12" font-size="16" font-weight="bold">37%</text>
-      <text x="292" y="35" font-size="16" font-weight="bold">12%</text>
+    <svg width="336" height="50" viewBox="0 0 336 50">
+      <line x1="4" y1="22" x2="196" y2="22" stroke="#B81D13" stroke-width="2" stroke-dasharray="6 4"/>
+      <text x="4" y="36" font-size="16" font-weight="bold" fill="#B81D13">200-DAY MA</text>
+      <polyline points="4,8 45,11 85,7 125,15 160,21 185,34 198,44" fill="none" stroke="#111" stroke-width="3"/>
+      <text x="98" y="14" font-size="16" font-weight="bold" fill="#1B365D">LATE JULY LOW</text>
+      <rect x="248" y="20" width="22" height="26" fill="#1B365D"/>
+      <rect x="302" y="38" width="22" height="8" fill="#B81D13"/>
+      <text x="244" y="16" font-size="16" font-weight="bold">37%</text>
+      <text x="296" y="34" font-size="16" font-weight="bold">12%</text>
     </svg>
   </article>
 </section>
 
 <section class="mapband">
-  <div class="maphead">
-    <span class="ttl">WORLD MAP — 14 PINS</span>
-    <span class="badges">NORTH AMERICA (3) &bull; SOUTH AMERICA (1) &bull; EUROPE (4) &bull; MIDDLE EAST (3) &bull; ASIA-PACIFIC (2) &bull; AFRICA (1)</span>
-  </div>
+  <div class="maphead"><span class="ttl">MAP:</span> NORTH AMERICA (3) &bull; SOUTH AMERICA (1) &bull; EUROPE (4) &bull; MIDDLE EAST (3) &bull; ASIA-PACIFIC (2) &bull; AFRICA (1)</div>
   <div class="mapwrap" id="mapwrap">
-    <svg id="dotmap" width="996" height="74" viewBox="0 0 996 74"></svg>
+    <svg id="dotmap" width="996" height="66" viewBox="0 0 996 66"></svg>
   </div>
   <div class="inset">
-    <svg width="168" height="50" viewBox="0 0 168 50" aria-label="Strait of Hormuz schematic">
-      <path d="M0,4 L58,4 L74,16 L108,20 L134,8 L168,5 L168,26 L124,32 L92,28 L66,38 L32,34 L0,42 Z" fill="#dfe9f2" stroke="#1B365D" stroke-width="1.5"/>
-      <path d="M0,42 L32,34 L66,38 L92,28 L124,32 L168,26 L168,50 L0,50 Z" fill="#f3e3c2" stroke="#999" stroke-width="1"/>
-      <circle cx="32" cy="14" r="8" fill="#B81D13"/><text x="32" y="19" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">A</text>
-      <circle cx="84" cy="23" r="8" fill="#B81D13"/><text x="84" y="28" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">B</text>
-      <circle cx="108" cy="36" r="8" fill="#1B365D"/><text x="108" y="41" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">C</text>
-      <circle cx="56" cy="42" r="8" fill="#1B365D"/><text x="56" y="47" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">D</text>
-      <circle cx="142" cy="40" r="8" fill="#B81D13"/><text x="142" y="45" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">E</text>
+    <svg width="150" height="46" viewBox="0 0 150 46" aria-label="Strait of Hormuz schematic">
+      <path d="M0,3 L52,3 L66,14 L98,18 L122,7 L150,4 L150,23 L113,28 L83,25 L60,34 L29,30 L0,38 Z" fill="#dfe9f2" stroke="#1B365D" stroke-width="1.5"/>
+      <path d="M0,38 L29,30 L60,34 L83,25 L113,28 L150,23 L150,46 L0,46 Z" fill="#f3e3c2" stroke="#999" stroke-width="1"/>
+      <circle cx="28" cy="12" r="7.5" fill="#B81D13"/><text x="28" y="17" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">A</text>
+      <circle cx="76" cy="20" r="7.5" fill="#B81D13"/><text x="76" y="25" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">B</text>
+      <circle cx="97" cy="32" r="7.5" fill="#1B365D"/><text x="97" y="37" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">C</text>
+      <circle cx="50" cy="37" r="7.5" fill="#1B365D"/><text x="50" y="42" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">D</text>
+      <circle cx="128" cy="35" r="7.5" fill="#B81D13"/><text x="128" y="40" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">E</text>
     </svg>
     <span class="ititle">HORMUZ<br>INSET</span>
     <div class="legend">
@@ -149,7 +145,7 @@
 </section>
 
 <section class="modules">
-  <article class="mod"><h4>KYIV HITS KERCH BRIDGE AGAIN; ENVOYS TALK PEACE</h4><p><b>BRIDGE DUEL:</b> Ukraine struck Kerch Bridge a 2nd straight night; Russia bombed Kyiv bridges. <b>TALKS:</b> Kushner &amp; Witkoff meet; UN: 372+ civilians killed in Oct.</p></article>
+  <article class="mod"><h4>KYIV HITS KERCH BRIDGE AGAIN; ENVOYS TALK PEACE</h4><p><b>BRIDGE DUEL:</b> Ukraine hit Kerch Bridge a 2nd night; Russia bombed Kyiv bridges. <b>TALKS:</b> Kushner &amp; Witkoff; UN: 372+ dead in Oct.</p></article>
   <article class="mod"><h4>WINTER COLD THREATENS 1.7M DISPLACED IN GAZA</h4><p><b>UN WARNING:</b> Cold &amp; flooding heighten mortality risks in tent camps. <b>ALLIED DEMAND:</b> UK, Australia, Canada &amp; Italy demand Israel allow unrestricted aid.</p></article>
   <article class="mod"><h4>HERZOG TAPS EISENKOT TO FORM GOVERNMENT</h4><p><b>NETANYAHU BYPASSED:</b> As the newly elected Knesset was sworn in, President Herzog tasked centrist Gadi Eisenkot with building a coalition.</p></article>
   <article class="mod"><h4>TRUMP IN MANILA FOR QUAD AHEAD OF APEC</h4><p><b>INDO-PACIFIC TOUR:</b> Trump arrived in Manila for Quad talks before China. <b>SHENZHEN:</b> APEC week opens; potential Trump–Putin bilateral.</p></article>
@@ -160,17 +156,17 @@
 </section>
 
 <section class="micros">
-  <article class="micro"><h5><span class="cat">MEASLES:</span> US LOSES ELIMINATION STATUS</h5><p>Worst outbreak since 1991; cases at a 40-year high.</p></article>
-  <article class="micro"><h5>OUTAGES HIT APPLE &amp; NSA</h5><p>A wave of US tech outages disrupts services.</p></article>
+  <article class="micro"><h5><span class="cat">MEASLES:</span> US LOSES ELIMINATION STATUS</h5><p>Worst since 1991; 40-year high.</p></article>
+  <article class="micro"><h5>OUTAGES HIT APPLE &amp; NSA</h5><p>US tech outages disrupt services.</p></article>
   <article class="micro"><h5>WAYMO PULLS DRIVERLESS TAXIS FROM FREEWAYS</h5><p>All US freeway operations halted.</p></article>
-  <article class="micro"><h5>CYBER-ATTACK FREEZES EU SUPERMARKETS</h5><p>Freezers disabled across seven European countries.</p></article>
-  <article class="micro"><h5>FRANCE: FOURTH WEEKEND OF PROTESTS</h5><p>Cost-of-living anger fills the streets again.</p></article>
+  <article class="micro"><h5>CYBER-ATTACK FREEZES EU SUPERMARKETS</h5><p>Freezers disabled in 7 EU countries.</p></article>
+  <article class="micro"><h5>FRANCE: FOURTH WEEKEND OF PROTESTS</h5><p>Cost-of-living anger fills streets.</p></article>
   <article class="micro"><h5>ROMANIA: 5.3 EARTHQUAKE</h5><p>A 5.3 magnitude quake shakes Romania.</p></article>
-  <article class="micro"><h5>PATTINSON NAMED NEW JAMES BOND</h5><p>Bezos "heavily involved" in the 007 casting.</p></article>
-  <article class="micro"><h5>GTA VI LAUNCHES TOMORROW</h5><p>Record pre-orders; midnight queues form worldwide.</p></article>
-  <article class="micro"><h5>POCHETTINO BIDS US FAREWELL</h5><p>Emotional exit before Manchester United job.</p></article>
+  <article class="micro"><h5>PATTINSON NAMED NEW JAMES BOND</h5><p>Bezos "heavily involved" in casting.</p></article>
+  <article class="micro"><h5>GTA VI LAUNCHES TOMORROW</h5><p>Record pre-orders; queues worldwide.</p></article>
+  <article class="micro"><h5>POCHETTINO BIDS US FAREWELL</h5><p>Emotional exit before Man Utd job.</p></article>
   <article class="micro"><h5>SENEGAL FIRST INTO AFCON 2027</h5><p>First team to book its place.</p></article>
-  <article class="micro"><h5>AUS V ENG: DECIDING ODI</h5><p>Series on the line in the final match.</p></article>
+  <article class="micro"><h5>AUS V ENG: DECIDING ODI</h5><p>Series on the line in final match.</p></article>
   <article class="micro"><h5>GERMANY'S CHESS OLYMPIAD MEDAL</h5><p>First medal in 26 years.</p></article>
 </section>
 
@@ -181,44 +177,41 @@
 </footer>
 
 <script>
-  // Dotted-grid world map: dots are plotted on a grid wherever they fall
-  // inside one of the continent ellipses (cx, cy, rx, ry in px).
-  var ellipses = [
-    [165,17,102,15],[150,32,58,9],[122,41,24,5],           // North America
-    [238,49,27,6],[249,61,21,9],[258,7,24,6],              // South America + Greenland
-    [460,15,44,11],[446,24,20,6],                          // Europe
-    [480,37,48,14],[490,55,33,12],                         // Africa
-    [548,29,36,9],                                         // Middle East
-    [665,11,155,10],[612,31,46,10],[620,42,18,8],          // Asia band + India
-    [728,27,56,12],[748,43,26,7],[772,53,42,5],            // China, SE Asia, Indonesia
-    [812,23,10,12],                                        // Japan
-    [798,61,46,9],[862,69,13,3]                            // Australia + NZ
+  // Dotted-grid world map: dots on a lon/lat grid wherever the point falls
+  // inside one of the land boxes [lonMin, lonMax, latMin, latMax].
+  var land = [
+    [-168,-60,58,70],[-95,-55,48,58],[-125,-67,30,49],[-105,-83,14,25],[-58,-20,60,76],
+    [-80,-50,-5,10],[-75,-40,-20,-5],[-73,-53,-40,-20],
+    [-10,30,43,60],[5,30,58,70],
+    [-17,35,15,32],[-5,40,-5,15],[12,36,-30,-5],[43,50,-25,-12],
+    [35,60,12,42],
+    [30,180,50,70],[60,140,35,50],[72,88,10,26],[100,122,20,42],[95,108,5,22],
+    [95,140,-8,2],[129,142,31,45],[113,153,-28,-12],[166,178,-46,-34]
   ];
   var svg = document.getElementById('dotmap');
   var NS = 'http://www.w3.org/2000/svg';
-  for (var x = 7; x < 996; x += 13) {
-    for (var y = 4; y < 74; y += 6.4) {
+  for (var lon = -177; lon <= 177; lon += 3) {
+    for (var lat = 75; lat >= -45; lat -= 5) {
       var inside = false;
-      for (var i = 0; i < ellipses.length; i++) {
-        var e = ellipses[i];
-        var dx = (x - e[0]) / e[2], dy = (y - e[1]) / e[3];
-        if (dx * dx + dy * dy <= 1) { inside = true; break; }
+      for (var i = 0; i < land.length; i++) {
+        var b = land[i];
+        if (lon >= b[0] && lon <= b[1] && lat >= b[2] && lat <= b[3]) { inside = true; break; }
       }
       if (inside) {
         var dot = document.createElementNS(NS, 'circle');
-        dot.setAttribute('cx', x);
-        dot.setAttribute('cy', y.toFixed(1));
-        dot.setAttribute('r', 2.3);
+        dot.setAttribute('cx', ((lon + 180) / 360 * 996).toFixed(1));
+        dot.setAttribute('cy', ((78 - lat) / 126 * 66).toFixed(1));
+        dot.setAttribute('r', 1.7);
         dot.setAttribute('fill', '#3a3a3a');
         svg.appendChild(dot);
       }
     }
   }
   var pins = [
-    [1,56.5,38,'red'],[2,21.5,30,'navy'],[3,52,24,'red'],[4,53.5,46,'red'],
-    [5,55.5,56,'navy'],[6,78,52,'navy'],[7,50.5,38,'navy'],[8,82.5,30,'red'],
-    [9,67,16,'red'],[10,19.5,38,'navy'],[11,46.5,28,'red'],[12,24.5,64,'navy'],
-    [13,44.5,20,'teal'],[14,43,54,'teal']
+    [1,68,38,'red'],[2,31,24,'navy'],[3,58,19,'red'],[4,59,44,'red'],
+    [5,62,52,'navy'],[6,82,47,'navy'],[7,54,32,'navy'],[8,85,30,'red'],
+    [9,74,18,'red'],[10,27,36,'navy'],[11,51,27,'red'],[12,31,56,'navy'],
+    [13,47,15,'teal'],[14,45,51,'teal']
   ];
   var wrap = document.getElementById('mapwrap');
   pins.forEach(function(p){
