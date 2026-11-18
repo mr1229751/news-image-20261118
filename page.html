@@ -92,6 +92,11 @@
     display:flex; align-items:center; justify-content:center;
     transform:translate(-50%,-50%); border:1.2px solid #f7f1e3; z-index:3;
   }
+  .alsodot {
+    position:absolute; width:7px; height:7px; border-radius:50%;
+    background:#10243E; transform:translate(-50%,-50%);
+    border:1px solid #f7f1e3; box-shadow:0 0 0 1.5px #f7f1e3; z-index:2;
+  }
   .mapcap { font-size:10.5px; font-style:italic; font-family:"Noto Serif", serif; color:#3c4652; margin-top:3px; }
   .microlist { columns:2; column-gap:14px; flex:1; min-height:0; overflow:hidden; }
   .microlist div { font-size:10.2px; line-height:1.13; color:#232d38; margin:0 0 2px 0; break-inside:avoid; }
@@ -141,18 +146,22 @@
 <section class="panels">
   <article class="panel">
     <svg class="art" viewBox="0 0 300 62" preserveAspectRatio="none" aria-label="Tanker, jet and island">
-      <path d="M120 14 Q170 2 224 12" fill="none" stroke="#c0272d" stroke-width="2" stroke-dasharray="5 4"/>
-      <path d="M196 30 Q238 10 282 16" fill="none" stroke="#c0272d" stroke-width="2" stroke-dasharray="5 4"/>
-      <circle cx="226" cy="12" r="3.4" fill="#c0272d"/>
-      <path d="M238 6 L262 10 L246 15 L232 13 Z" fill="#10243E"/>
-      <path d="M246 10 L256 2 L254 10 Z" fill="#10243E"/>
-      <path d="M30 40 L150 40 L138 52 L44 52 Z" fill="#10243E"/>
-      <rect x="58" y="31" width="26" height="9" fill="#10243E"/>
-      <rect x="92" y="34" width="40" height="6" fill="#c0272d"/>
-      <line x1="70" y1="31" x2="70" y2="24" stroke="#10243E" stroke-width="2.5"/>
-      <circle cx="70" cy="22" r="2.6" fill="#c0272d"/>
-      <path d="M196 52 L214 36 L228 44 L244 34 L262 52 Z" fill="none" stroke="#10243E" stroke-width="2.5"/>
-      <path d="M6 57 Q18 52 30 57 T54 57 T78 57 T102 57 T126 57 T150 57 T174 57 T198 57 T222 57 T246 57 T270 57 T294 57" fill="none" stroke="#10243E" stroke-width="2"/>
+      <path d="M14 30 Q80 6 150 14" fill="none" stroke="#c0272d" stroke-width="4.5"/>
+      <path d="M120 38 Q190 12 262 18" fill="none" stroke="#c0272d" stroke-width="4.5"/>
+      <path d="M148 8 L162 11 L150 17 L140 14 Z" fill="#c0272d"/>
+      <path d="M258 12 L272 15 L260 21 L250 18 Z" fill="#c0272d"/>
+      <path d="M216 4 L252 8 L268 13 L250 15 L240 22 L236 15 L218 13 L206 10 Z" fill="#10243E"/>
+      <path d="M236 8 L246 0 L248 9 Z" fill="#10243E"/>
+      <rect x="0" y="48" width="300" height="14" fill="#10243E"/>
+      <rect x="18" y="54" width="52" height="3.5" fill="#f7f1e3"/>
+      <rect x="196" y="54" width="60" height="3.5" fill="#f7f1e3"/>
+      <path d="M18 36 L142 36 L132 48 L30 48 Z" fill="#10243E"/>
+      <rect x="40" y="26" width="30" height="10" fill="#10243E"/>
+      <rect x="78" y="29" width="44" height="7" fill="#c0272d"/>
+      <rect x="54" y="16" width="5" height="10" fill="#10243E"/>
+      <circle cx="56.5" cy="13" r="3.5" fill="#c0272d"/>
+      <path d="M188 48 L206 28 L220 38 L236 26 L254 38 L272 48 Z" fill="#10243E"/>
+      <rect x="216" y="18" width="7" height="12" fill="#c0272d"/>
     </svg>
     <div class="numcirc">1</div>
     <div class="kicker">1 &middot; MIDDLE EAST &middot; CONFLICT</div>
@@ -162,17 +171,24 @@
 
   <article class="panel">
     <svg class="art" viewBox="0 0 300 62" preserveAspectRatio="none" aria-label="Broken bridge over water">
-      <path d="M10 44 L118 44" stroke="#10243E" stroke-width="4"/>
-      <path d="M196 44 L290 44" stroke="#10243E" stroke-width="4"/>
-      <path d="M118 44 L158 50 L192 56" stroke="#10243E" stroke-width="4" fill="none"/>
-      <path d="M20 44 Q65 8 112 44" fill="none" stroke="#10243E" stroke-width="2.5"/>
-      <path d="M192 44 Q240 10 286 44" fill="none" stroke="#10243E" stroke-width="2.5"/>
-      <line x1="45" y1="30" x2="45" y2="44" stroke="#10243E" stroke-width="1.6"/>
-      <line x1="75" y1="22" x2="75" y2="44" stroke="#10243E" stroke-width="1.6"/>
-      <line x1="222" y1="28" x2="222" y2="44" stroke="#10243E" stroke-width="1.6"/>
-      <line x1="254" y1="22" x2="254" y2="44" stroke="#10243E" stroke-width="1.6"/>
-      <path d="M150 18 L154 27 L163 24 L158 32 L166 38 L156 38 L154 47 L150 39 L141 41 L146 33 L139 27 L148 27 Z" fill="#c0272d"/>
-      <path d="M6 57 Q18 52 30 57 T54 57 T78 57 T102 57 T126 57 T150 57 T174 57 T198 57 T222 57 T246 57 T270 57 T294 57" fill="none" stroke="#10243E" stroke-width="2"/>
+      <rect x="0" y="50" width="300" height="12" fill="#10243E"/>
+      <rect x="24" y="54" width="46" height="3.5" fill="#f7f1e3"/>
+      <rect x="222" y="54" width="52" height="3.5" fill="#f7f1e3"/>
+      <path d="M8 34 L60 6 L118 34 L118 26 L64 0 L8 26 Z" fill="#10243E"/>
+      <path d="M182 34 L240 6 L292 34 L292 26 L244 0 L182 26 Z" fill="#10243E"/>
+      <rect x="34" y="20" width="7" height="16" fill="#10243E"/>
+      <rect x="72" y="13" width="7" height="23" fill="#10243E"/>
+      <rect x="216" y="13" width="7" height="23" fill="#10243E"/>
+      <rect x="254" y="20" width="7" height="16" fill="#10243E"/>
+      <rect x="0" y="28" width="124" height="9" fill="#10243E"/>
+      <rect x="176" y="28" width="124" height="9" fill="#10243E"/>
+      <rect x="28" y="37" width="12" height="13" fill="#10243E"/>
+      <rect x="88" y="37" width="12" height="13" fill="#10243E"/>
+      <rect x="200" y="37" width="12" height="13" fill="#10243E"/>
+      <rect x="260" y="37" width="12" height="13" fill="#10243E"/>
+      <path d="M124 37 L172 30 L182 46 L134 52 Z" fill="#10243E"/>
+      <rect x="140" y="42" width="26" height="4" fill="#c0272d" transform="rotate(-8 153 44)"/>
+      <path d="M150 8 L155 19 L167 16 L160 25 L169 32 L157 31 L155 44 L149 33 L137 35 L144 26 L136 19 L148 19 Z" fill="#c0272d"/>
     </svg>
     <div class="numcirc">2</div>
     <div class="kicker">2 &middot; EUROPE &middot; WAR IN UKRAINE</div>
@@ -181,20 +197,25 @@
   </article>
 
   <article class="panel">
-    <svg class="art" viewBox="0 0 300 62" preserveAspectRatio="none" aria-label="Computer chip with rising chart">
-      <rect x="96" y="14" width="66" height="40" fill="none" stroke="#10243E" stroke-width="3"/>
-      <rect x="114" y="26" width="30" height="16" fill="#10243E"/>
-      <g stroke="#10243E" stroke-width="2.5">
-        <line x1="108" y1="14" x2="108" y2="6"/><line x1="124" y1="14" x2="124" y2="6"/><line x1="140" y1="14" x2="140" y2="6"/><line x1="152" y1="14" x2="152" y2="6"/>
-        <line x1="108" y1="54" x2="108" y2="60"/><line x1="124" y1="54" x2="124" y2="60"/><line x1="140" y1="54" x2="140" y2="60"/>
-        <line x1="96" y1="24" x2="86" y2="24"/><line x1="96" y1="34" x2="86" y2="34"/><line x1="96" y1="44" x2="86" y2="44"/>
-        <line x1="162" y1="24" x2="172" y2="24"/><line x1="162" y1="34" x2="172" y2="34"/><line x1="162" y1="44" x2="172" y2="44"/>
+    <svg class="art" viewBox="0 0 300 62" preserveAspectRatio="none" aria-label="Microchip">
+      <g fill="#10243E">
+        <rect x="112" y="0" width="11" height="9"/><rect x="133" y="0" width="11" height="9"/><rect x="154" y="0" width="11" height="9"/><rect x="175" y="0" width="11" height="9"/>
+        <rect x="112" y="53" width="11" height="9"/><rect x="133" y="53" width="11" height="9"/><rect x="154" y="53" width="11" height="9"/><rect x="175" y="53" width="11" height="9"/>
+        <rect x="89" y="15" width="10" height="8"/><rect x="89" y="27" width="10" height="8"/><rect x="89" y="39" width="10" height="8"/>
+        <rect x="199" y="15" width="10" height="8"/><rect x="199" y="27" width="10" height="8"/><rect x="199" y="39" width="10" height="8"/>
       </g>
-      <polyline points="182,50 208,42 228,44 252,28 286,10" fill="none" stroke="#c0272d" stroke-width="3.5"/>
-      <path d="M286 10 L274 12 L282 21 Z" fill="#c0272d"/>
-      <rect x="16" y="38" width="12" height="16" fill="#10243E"/>
-      <rect x="34" y="30" width="12" height="24" fill="#10243E"/>
-      <rect x="52" y="20" width="12" height="34" fill="#c0272d"/>
+      <rect x="99" y="9" width="100" height="44" fill="#10243E"/>
+      <rect x="114" y="19" width="70" height="24" fill="#f7f1e3"/>
+      <g fill="#10243E">
+        <rect x="121" y="24" width="15" height="6"/><rect x="141" y="24" width="15" height="6"/><rect x="161" y="24" width="15" height="6"/>
+        <rect x="121" y="33" width="15" height="6"/><rect x="161" y="33" width="15" height="6"/>
+      </g>
+      <rect x="141" y="33" width="15" height="6" fill="#c0272d"/>
+      <circle cx="107" cy="15" r="3.2" fill="#c0272d"/>
+      <path d="M14 50 L40 50 L40 34 L66 34 L66 20 L85 20" fill="none" stroke="#10243E" stroke-width="6"/>
+      <path d="M286 12 L260 12 L260 28 L234 28 L234 42 L213 42" fill="none" stroke="#10243E" stroke-width="6"/>
+      <circle cx="11" cy="50" r="6.5" fill="#c0272d"/>
+      <circle cx="289" cy="12" r="6.5" fill="#c0272d"/>
     </svg>
     <div class="numcirc">3</div>
     <div class="kicker">3 &middot; MARKETS &middot; TECHNOLOGY</div>
@@ -238,10 +259,10 @@
 
 <section class="numbers">
   <div class="lbl">BY THE<br>NUMBERS</div>
-  <div class="numitem"><span class="big">66&ndash;52</span><span class="cap">Kahana&rsquo;s winning margin for speaker</span></div>
-  <div class="numitem"><span class="big">$115.8bn</span><span class="cap">Nvidia&rsquo;s quarterly revenue, up 103%</span></div>
-  <div class="numitem"><span class="big">145 km/h</span><span class="cap">Akvan&rsquo;s forecast gusts at landfall</span></div>
-  <div class="numitem"><span class="big">200,000</span><span class="cap">people Odisha is moving from the coast</span></div>
+  <div class="numitem"><span class="big">25.9bn km</span><span class="cap">Voyager 1, one light-day from Earth</span></div>
+  <div class="numitem"><span class="big">1.7M</span><span class="cap">displaced people facing cold and floods in Gaza</span></div>
+  <div class="numitem"><span class="big">$12bn</span><span class="cap">Venezuela&rsquo;s oil and mineral revenue, US report</span></div>
+  <div class="numitem"><span class="big">5.3</span><span class="cap">magnitude of Romania&rsquo;s earthquake</span></div>
 </section>
 
 <section class="bottom">
@@ -258,8 +279,14 @@
       <div class="pin" style="left:72.4%;top:41.4%">7</div>
       <div class="pin" style="left:29.4%;top:27.5%">8</div>
       <div class="pin" style="left:25.7%;top:26.8%">9</div>
+      <div class="alsodot" style="left:32.0%;top:57.0%" title="Venezuela"></div>
+      <div class="alsodot" style="left:46.0%;top:48.0%" title="Senegal"></div>
+      <div class="alsodot" style="left:86.8%;top:83.6%" title="Australia"></div>
+      <div class="alsodot" style="left:50.7%;top:24.5%" title="France"></div>
+      <div class="alsodot" style="left:70.8%;top:47.0%" title="India"></div>
+      <div class="alsodot" style="left:87.5%;top:31.0%" title="Japan"></div>
     </div>
-    <div class="mapcap">Numbered dots mark stories 1&ndash;9.</div>
+    <div class="mapcap">Numbered dots mark stories 1&ndash;9; small dots, the rest.</div>
   </div>
   <div class="rightcol">
     <p class="colhead">ALSO ON WEDNESDAY 18 NOVEMBER <span class="red">&mdash; 25 MORE STORIES</span></p>
