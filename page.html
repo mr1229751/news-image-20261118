@@ -10,7 +10,7 @@
     background:#FBF9F5; color:#111111;
     font-family:"Noto Sans", "Liberation Sans", sans-serif;
     padding:0 14px;
-    display:flex; flex-direction:column; gap:4px;
+    display:flex; flex-direction:column; gap:3px;
   }
   b, strong { font-weight:700; }
   .kicker { color:#B81D13; font-weight:700; font-size:16px; letter-spacing:2px; line-height:1.05; }
@@ -28,7 +28,7 @@
   .pulse .neg { color:#B81D13; }
 
   /* ---------- Hero ---------- */
-  .hero { height:272px; display:flex; gap:10px; border-bottom:2px solid #111; overflow:hidden; }
+  .hero { height:266px; display:flex; gap:10px; border-bottom:2px solid #111; overflow:hidden; }
   .lead { width:640px; border-right:1px solid #ccc; padding-right:10px; overflow:hidden; }
   .lead h2 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:800; font-size:34px; line-height:1.02; margin:2px 0 3px 0; }
   .lead .sub { font-size:17px; line-height:1.12; color:#222; margin:0 0 4px 0; }
@@ -41,10 +41,10 @@
   .markets p { font-size:16px; line-height:1.12; margin:0 0 3px 0; }
 
   /* ---------- Map band ---------- */
-  .mapband { height:144px; border-bottom:2px solid #111; overflow:hidden; }
+  .mapband { height:128px; border-bottom:2px solid #111; overflow:hidden; }
   .maphead { text-align:center; font-size:16px; font-weight:700; white-space:nowrap; color:#1B365D; line-height:1.15; }
   .maphead .ttl { color:#B81D13; }
-  .mapwrap { position:relative; height:66px; }
+  .mapwrap { position:relative; height:50px; }
   .pin { position:absolute; width:22px; height:22px; border-radius:50%; color:#fff; font-size:13px; font-weight:700;
          display:flex; align-items:center; justify-content:center; transform:translate(-50%,-50%); border:1.5px solid #fff; z-index:2; }
   .pin.red { background:#B81D13; } .pin.navy { background:#1B365D; } .pin.teal { background:#117864; }
@@ -62,7 +62,7 @@
   .mod p { font-size:16px; line-height:1.1; margin:0; }
 
   /* ---------- Micro cards ---------- */
-  .micros { height:168px; display:grid; grid-template-columns:repeat(6,1fr); grid-template-rows:92px 76px; border-bottom:2px solid #111; }
+  .micros { height:196px; display:grid; grid-template-columns:repeat(6,1fr); grid-template-rows:106px 90px; border-bottom:2px solid #111; }
   .micro { padding:3px 6px 2px 7px; overflow:hidden; border-left:1px solid #ddd; }
   .micro:nth-child(6n+1) { border-left:none; padding-left:0; }
   .micro h5 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:700; font-size:16px; line-height:1.04; margin:0 0 2px 0; }
@@ -124,7 +124,7 @@
 <section class="mapband">
   <div class="maphead"><span class="ttl">MAP:</span> NORTH AMERICA (3) &bull; SOUTH AMERICA (1) &bull; EUROPE (4) &bull; MIDDLE EAST (3) &bull; ASIA-PACIFIC (2) &bull; AFRICA (1)</div>
   <div class="mapwrap" id="mapwrap">
-    <svg id="dotmap" width="996" height="66" viewBox="0 0 996 66"></svg>
+    <svg id="dotmap" width="996" height="50" viewBox="0 0 996 50"></svg>
   </div>
   <div class="inset">
     <svg width="150" height="46" viewBox="0 0 150 46" aria-label="Strait of Hormuz schematic">
@@ -146,7 +146,7 @@
 
 <section class="modules">
   <article class="mod"><h4>KYIV HITS KERCH BRIDGE AGAIN; ENVOYS TALK PEACE</h4><p><b>BRIDGE DUEL:</b> Ukraine hit Kerch Bridge a 2nd night; Russia bombed Kyiv bridges. <b>TALKS:</b> Kushner &amp; Witkoff; UN: 372+ dead in Oct.</p></article>
-  <article class="mod"><h4>WINTER COLD THREATENS 1.7M DISPLACED IN GAZA</h4><p><b>UN WARNING:</b> Cold &amp; flooding raise mortality risks in tent camps. <b>ALLIED DEMAND:</b> UK, Australia, Canada &amp; Italy demand Israel allow unrestricted aid.</p></article>
+  <article class="mod"><h4>WINTER COLD THREATENS 1.7M DISPLACED IN GAZA</h4><p><b>UN WARNING:</b> Cold &amp; floods raise mortality risks in camps. UK, Australia, Canada &amp; Italy demand Israel allow unrestricted aid.</p></article>
   <article class="mod"><h4>HERZOG TAPS EISENKOT TO FORM GOVERNMENT</h4><p><b>NETANYAHU BYPASSED:</b> As the newly elected Knesset was sworn in, President Herzog tasked centrist Gadi Eisenkot with building a coalition.</p></article>
   <article class="mod"><h4>TRUMP IN MANILA FOR QUAD AHEAD OF APEC</h4><p><b>INDO-PACIFIC TOUR:</b> Trump arrived in Manila for Quad talks before China. <b>SHENZHEN:</b> APEC week opens; potential Trump–Putin bilateral.</p></article>
   <article class="mod"><h4>COP31 IN ANTALYA FACES 144 DISPUTED ITEMS</h4><p><b>FINAL STRETCH:</b> UN negotiators in Turkey enter decisive phase before Friday's deadline, battling 144 disputed items.</p></article>
@@ -157,17 +157,17 @@
 
 <section class="micros">
   <article class="micro"><h5><span class="cat">MEASLES:</span> US LOSES ELIMINATION STATUS</h5><p>Worst since 1991; 40-year high.</p></article>
-  <article class="micro"><h5>OUTAGES HIT APPLE &amp; NSA</h5><p>US tech outages disrupt services.</p></article>
   <article class="micro"><h5>WAYMO PULLS DRIVERLESS TAXIS FROM FREEWAYS</h5><p>All US freeway operations halted.</p></article>
+  <article class="micro"><h5>PATTINSON NAMED NEW JAMES BOND</h5><p>Bezos "heavily involved" in casting.</p></article>
+  <article class="micro"><h5>POCHETTINO BIDS US FAREWELL</h5><p>Emotional exit before Man Utd job.</p></article>
+  <article class="micro"><h5>GERMANY'S CHESS OLYMPIAD MEDAL</h5><p>First medal in 26 years.</p></article>
   <article class="micro"><h5>CYBER-ATTACK FREEZES EU SUPERMARKETS</h5><p>Freezers disabled in 7 EU countries.</p></article>
+  <article class="micro"><h5>OUTAGES HIT APPLE &amp; NSA</h5><p>US tech outages disrupt services.</p></article>
   <article class="micro"><h5>FRANCE: FOURTH WEEKEND OF PROTESTS</h5><p>Cost-of-living anger fills streets.</p></article>
   <article class="micro"><h5>ROMANIA: 5.3 EARTHQUAKE</h5><p>A 5.3 magnitude quake shakes Romania.</p></article>
-  <article class="micro"><h5>PATTINSON NAMED NEW JAMES BOND</h5><p>Bezos "heavily involved" in casting.</p></article>
   <article class="micro"><h5>GTA VI LAUNCHES TOMORROW</h5><p>Record pre-orders; queues worldwide.</p></article>
-  <article class="micro"><h5>POCHETTINO BIDS US FAREWELL</h5><p>Emotional exit before Man Utd job.</p></article>
   <article class="micro"><h5>SENEGAL FIRST INTO AFCON 2027</h5><p>First team to book its place.</p></article>
   <article class="micro"><h5>AUS V ENG: DECIDING ODI</h5><p>Series on the line in final match.</p></article>
-  <article class="micro"><h5>GERMANY'S CHESS OLYMPIAD MEDAL</h5><p>First medal in 26 years.</p></article>
 </section>
 
 <footer>
@@ -200,7 +200,7 @@
       if (inside) {
         var dot = document.createElementNS(NS, 'circle');
         dot.setAttribute('cx', ((lon + 180) / 360 * 996).toFixed(1));
-        dot.setAttribute('cy', ((78 - lat) / 126 * 66).toFixed(1));
+        dot.setAttribute('cy', ((78 - lat) / 126 * 50).toFixed(1));
         dot.setAttribute('r', 1.2);
         dot.setAttribute('fill', '#3a3a3a');
         svg.appendChild(dot);
