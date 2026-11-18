@@ -10,67 +10,67 @@
     background:#FBF9F5; color:#111111;
     font-family:"Noto Sans", "Liberation Sans", sans-serif;
     padding:0 14px;
-    display:flex; flex-direction:column; gap:5px;
+    display:flex; flex-direction:column; gap:6px;
   }
-  .serif { font-family:"Noto Serif", "Liberation Serif", serif; }
   b, strong { font-weight:700; }
+  .kicker { color:#B81D13; font-weight:700; font-size:16px; letter-spacing:2px; line-height:1.1; }
 
   /* ---------- Masthead ---------- */
-  header { height:74px; border-bottom:4px solid #111; display:flex; align-items:center; justify-content:space-between; padding-top:4px; }
-  header h1 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:900; font-size:55px; letter-spacing:.5px; margin:0; line-height:1; white-space:nowrap; }
-  .datepill { background:#111; color:#fff; font-weight:700; font-size:19px; padding:10px 14px; border-radius:24px; white-space:nowrap; text-align:center; line-height:1.15; }
-  .tagline { display:none; }
+  header { height:64px; border-bottom:4px solid #111; display:flex; align-items:center; justify-content:space-between; }
+  header h1 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:900; font-size:43px; margin:0; line-height:1; white-space:nowrap; }
+  .tagline { font-size:16px; font-weight:700; letter-spacing:1.2px; color:#1B365D; margin-top:3px; white-space:nowrap; }
+  .datepill { background:#111; color:#fff; font-weight:700; font-size:18px; padding:8px 13px; border-radius:22px; white-space:nowrap; text-align:center; line-height:1.2; }
 
   /* ---------- Global Pulse ---------- */
-  .pulse { height:34px; display:flex; gap:6px; }
-  .pulse div { flex:1; border:2px solid #111; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:700; white-space:nowrap; padding:0 4px; }
+  .pulse { height:38px; display:flex; gap:6px; }
+  .pulse div { flex:1; border:2px solid #111; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:700; white-space:nowrap; padding:0 3px; overflow:hidden; }
   .pulse .neg { color:#B81D13; }
-  .pulse span.lbl { color:#1B365D; margin-right:5px; }
+  .pulse span.lbl { color:#1B365D; margin-right:4px; }
 
   /* ---------- Hero ---------- */
-  .hero { height:306px; display:flex; gap:10px; border-bottom:2px solid #111; padding-bottom:5px; }
-  .lead { width:622px; border-right:1px solid #ccc; padding-right:10px; overflow:hidden; }
-  .kicker { color:#B81D13; font-weight:700; font-size:16px; letter-spacing:2px; }
-  .lead h2 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:800; font-size:43px; line-height:1.04; margin:2px 0 4px 0; }
-  .lead .sub { font-size:18px; line-height:1.18; color:#222; margin:0 0 5px 0; }
-  .lead ul { margin:0; padding-left:18px; }
-  .lead li { font-size:16.5px; line-height:1.16; margin-bottom:3px; }
-  .inset { display:flex; gap:8px; border-top:2px solid #111; margin-top:4px; padding-top:4px; }
-  .inset .legend { display:flex; gap:10px; }
-  .inset .legend div { font-size:16px; line-height:1.22; white-space:nowrap; }
-  .inset .legend b { color:#B81D13; }
+  .hero { height:248px; display:flex; gap:10px; border-bottom:2px solid #111; padding-bottom:4px; overflow:hidden; }
+  .lead { width:618px; border-right:1px solid #ccc; padding-right:10px; overflow:hidden; }
+  .lead h2 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:800; font-size:37px; line-height:1.03; margin:3px 0 4px 0; }
+  .lead .sub { font-size:17px; line-height:1.16; color:#222; margin:0 0 5px 0; }
+  .lead ul { margin:0; padding-left:17px; }
+  .lead li { font-size:16px; line-height:1.17; margin-bottom:3px; }
 
   .markets { flex:1; overflow:hidden; }
-  .markets h3 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:700; font-size:24px; line-height:1.12; margin:0 0 3px 0; }
-  .markets .sub { font-size:16.5px; line-height:1.18; margin:0 0 4px 0; color:#222; }
-  .markets p { font-size:16.5px; line-height:1.2; margin:0 0 4px 0; }
-  .markets .chart { border-top:1px solid #ccc; padding-top:2px; }
+  .markets h3 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:700; font-size:22px; line-height:1.1; margin:2px 0 3px 0; }
+  .markets .sub { font-size:16px; line-height:1.16; margin:0 0 3px 0; color:#222; }
+  .markets p { font-size:16px; line-height:1.17; margin:0 0 3px 0; }
 
   /* ---------- Map band ---------- */
-  .mapband { height:114px; border-bottom:2px solid #111; padding-bottom:3px; overflow:hidden; }
-  .mapbadges { display:flex; justify-content:space-between; font-size:16px; font-weight:700; color:#1B365D; white-space:nowrap; }
-  .mapbadges .ttl { color:#B81D13; letter-spacing:1px; }
-  .mapwrap { position:relative; height:88px; margin-top:2px; }
+  .mapband { height:154px; border-bottom:2px solid #111; overflow:hidden; }
+  .maphead { display:flex; justify-content:space-between; align-items:baseline; font-size:16px; font-weight:700; white-space:nowrap; }
+  .maphead .ttl { color:#B81D13; letter-spacing:.5px; }
+  .maphead .badges { color:#1B365D; }
+  .mapwrap { position:relative; height:74px; margin-top:1px; }
   .pin { position:absolute; width:22px; height:22px; border-radius:50%; color:#fff; font-size:13px; font-weight:700;
-         display:flex; align-items:center; justify-content:center; transform:translate(-50%,-50%); border:1.5px solid #fff; }
+         display:flex; align-items:center; justify-content:center; transform:translate(-50%,-50%); border:1.5px solid #fff; z-index:2; }
   .pin.red { background:#B81D13; } .pin.navy { background:#1B365D; } .pin.teal { background:#117864; }
+  .inset { display:flex; gap:10px; border-top:1px solid #bbb; margin-top:2px; padding-top:3px; align-items:center; }
+  .inset .ititle { font-size:16px; font-weight:700; color:#B81D13; white-space:nowrap; }
+  .inset .legend { display:flex; gap:14px; flex:1; }
+  .inset .legend div { font-size:16px; line-height:1.18; white-space:nowrap; }
+  .inset .legend b { color:#B81D13; }
 
   /* ---------- Module grid ---------- */
-  .modules { height:262px; display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:1fr 1fr; border-bottom:2px solid #111; }
-  .mod { padding:5px 8px 3px 8px; overflow:hidden; border-left:1px solid #ddd; }
+  .modules { height:264px; display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:1fr 1fr; border-bottom:2px solid #111; }
+  .mod { padding:5px 8px 2px 8px; overflow:hidden; border-left:1px solid #ddd; }
   .mod:nth-child(4n+1) { border-left:none; padding-left:0; }
-  .mod h4 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:700; font-size:21px; line-height:1.1; margin:0 0 3px 0; }
-  .mod p { font-size:16px; line-height:1.14; margin:0; }
+  .mod h4 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:700; font-size:19.5px; line-height:1.08; margin:0 0 3px 0; }
+  .mod p { font-size:16px; line-height:1.13; margin:0; }
 
   /* ---------- Micro cards ---------- */
-  .micros { height:186px; display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:repeat(3,1fr); border-bottom:2px solid #111; }
+  .micros { height:204px; display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:repeat(3,1fr); border-bottom:2px solid #111; }
   .micro { padding:4px 8px 2px 8px; overflow:hidden; border-left:1px solid #ddd; border-top:1px solid #eee; }
   .micro:nth-child(4n+1) { border-left:none; padding-left:0; }
-  .micro h5 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:700; font-size:16.5px; line-height:1.08; margin:0 0 2px 0; }
+  .micro h5 { font-family:"Noto Serif","Liberation Serif",serif; font-weight:700; font-size:16.5px; line-height:1.07; margin:0 0 2px 0; }
   .micro p { font-size:16px; line-height:1.1; margin:0; color:#222; }
   .micro .cat { color:#B81D13; }
 
-  footer { height:18px; display:flex; justify-content:space-between; align-items:center; font-size:16px; font-weight:700; white-space:nowrap; }
+  footer { height:16px; display:flex; justify-content:space-between; align-items:center; font-size:16px; font-weight:700; white-space:nowrap; line-height:1; }
 </style>
 </head>
 <body>
@@ -78,16 +78,16 @@
 <header>
   <div>
     <h1>THE WORLD DAILY BRIEFING</h1>
-    <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;color:#1B365D;">GLOBAL INTELLIGENCE EDITION &bull; 19 VERIFIED DISPATCHES &bull; 6 CONTINENTS</div>
+    <div class="tagline">GLOBAL INTELLIGENCE EDITION &bull; 19 VERIFIED DISPATCHES &bull; 6 CONTINENTS</div>
   </div>
-  <div class="datepill">WEDNESDAY<br>18 NOVEMBER 2026</div>
+  <div class="datepill">WEDNESDAY, 18 NOVEMBER 2026</div>
 </header>
 
 <section class="pulse">
-  <div><span class="lbl">DOW INDUSTRIALS:</span><span class="neg">-849 PTS</span>&nbsp;(Intraday -1,000+)</div>
-  <div><span class="lbl">BRENT CRUDE:</span>$93.14 / BBL (Hormuz Shock)</div>
-  <div><span class="lbl">TECH ALLOCATION:</span>37% TO 12% (BofA Survey)</div>
-  <div><span class="lbl">GAZA DISPLACED:</span>1.7 MILLION (UN Winter Alert)</div>
+  <div><span class="lbl">DOW:</span><span class="neg">-849 PTS</span>&nbsp;(Intraday -1,000+)</div>
+  <div><span class="lbl">BRENT:</span>$93.14 / BBL (Hormuz Shock)</div>
+  <div><span class="lbl">TECH ALLOC:</span>37% TO 12% (BofA Survey)</div>
+  <div><span class="lbl">GAZA DISPLACED:</span>1.7 MILLION (UN Alert)</div>
 </section>
 
 <section class="hero">
@@ -101,21 +101,6 @@
       <li><b>JORDAN BASE HIT:</b> Iranian missiles targeted the US Al-Azraq air base in Jordan.</li>
       <li><b>GULF INTERCEPTS:</b> Bahrain downed six drones targeting US radar (second attack in three days); Kuwait also intercepted drones.</li>
     </ul>
-    <div class="inset">
-      <svg width="150" height="62" viewBox="0 0 150 62" aria-label="Strait of Hormuz schematic">
-        <path d="M0,8 L52,8 L66,22 L96,26 L118,14 L150,10 L150,34 L112,40 L84,36 L60,46 L30,42 L0,50 Z" fill="#dfe9f2" stroke="#1B365D" stroke-width="1.5"/>
-        <path d="M0,50 L30,42 L60,46 L84,36 L112,40 L150,34 L150,62 L0,62 Z" fill="#f3e3c2" stroke="#999" stroke-width="1"/>
-        <circle cx="30" cy="20" r="8" fill="#B81D13"/><text x="30" y="25" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">A</text>
-        <circle cx="76" cy="30" r="8" fill="#B81D13"/><text x="76" y="35" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">B</text>
-        <circle cx="98" cy="44" r="8" fill="#1B365D"/><text x="98" y="49" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">C</text>
-        <circle cx="52" cy="52" r="8" fill="#1B365D"/><text x="52" y="57" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">D</text>
-        <circle cx="128" cy="50" r="8" fill="#B81D13"/><text x="128" y="55" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">E</text>
-      </svg>
-      <div class="legend">
-        <div><b>A</b> KHARG &amp; OMAN — 5 tankers sunk<br><b>B</b> HORMUZ — shipping hit; $93.14<br><b>C</b> QESHM — US hits IRGC base</div>
-        <div><b>D</b> BAHRAIN/KUWAIT — drones downed<br><b>E</b> AL-AZRAQ — missiles at US base</div>
-      </div>
-    </div>
   </article>
 
   <article class="markets">
@@ -123,41 +108,55 @@
     <h3>DOW PLUNGES 849 POINTS IN PRE-NVIDIA TECH ROUT</h3>
     <p class="sub">S&amp;P 500 breaks 200-day average to late-July low as Brent hits $93.14.</p>
     <p><b>WALL STREET:</b> Dow dropped 1,000+ points intraday before closing down 849.</p>
-    <p><b>FUND EXODUS:</b> BofA survey: tech overweight slashed 37% to 12% — biggest monthly drop since 2006 — rotating into gold.</p>
-    <div class="chart">
-      <svg width="330" height="104" viewBox="0 0 330 104">
-        <line x1="4" y1="42" x2="326" y2="42" stroke="#B81D13" stroke-width="2" stroke-dasharray="6 4"/>
-        <text x="6" y="36" font-size="16" font-weight="bold" fill="#B81D13">200-DAY MA</text>
-        <polyline points="4,20 60,24 110,18 160,30 205,40 245,58 285,76 322,92" fill="none" stroke="#111" stroke-width="3"/>
-        <text x="196" y="100" font-size="16" font-weight="bold" fill="#1B365D">LATE JULY LOW &darr;</text>
-        <rect x="238" y="8" width="20" height="52" fill="#1B365D"/>
-        <rect x="292" y="44" width="20" height="16" fill="#B81D13"/>
-        <text x="230" y="76" font-size="16" font-weight="bold">37%</text>
-        <text x="286" y="76" font-size="16" font-weight="bold">12%</text>
-      </svg>
-    </div>
+    <p><b>FUND EXODUS:</b> BofA: tech overweight slashed 37% to 12% — biggest monthly drop since 2006 — rotating into gold.</p>
+    <svg width="336" height="58" viewBox="0 0 336 58">
+      <line x1="4" y1="24" x2="200" y2="24" stroke="#B81D13" stroke-width="2" stroke-dasharray="6 4"/>
+      <text x="4" y="16" font-size="16" font-weight="bold" fill="#B81D13">200-DAY MA</text>
+      <polyline points="4,10 45,13 85,9 125,17 160,23 185,36 200,46" fill="none" stroke="#111" stroke-width="3"/>
+      <text x="96" y="56" font-size="16" font-weight="bold" fill="#1B365D">LATE JULY LOW</text>
+      <rect x="238" y="14" width="22" height="34" fill="#1B365D"/>
+      <rect x="296" y="37" width="22" height="11" fill="#B81D13"/>
+      <text x="234" y="12" font-size="16" font-weight="bold">37%</text>
+      <text x="292" y="35" font-size="16" font-weight="bold">12%</text>
+    </svg>
   </article>
 </section>
 
 <section class="mapband">
-  <div class="mapbadges">
-    <span class="ttl">THE WORLD IN ONE DAY — 14 PINNED DISPATCHES</span>
-    <span>N. AMERICA (3) &bull; S. AMERICA (1) &bull; EUROPE (4) &bull; MIDDLE EAST (3) &bull; ASIA-PACIFIC (2) &bull; AFRICA (1)</span>
+  <div class="maphead">
+    <span class="ttl">WORLD MAP — 14 PINS</span>
+    <span class="badges">NORTH AMERICA (3) &bull; SOUTH AMERICA (1) &bull; EUROPE (4) &bull; MIDDLE EAST (3) &bull; ASIA-PACIFIC (2) &bull; AFRICA (1)</span>
   </div>
   <div class="mapwrap" id="mapwrap">
-    <svg id="dotmap" width="996" height="88" viewBox="0 0 996 88"></svg>
+    <svg id="dotmap" width="996" height="74" viewBox="0 0 996 74"></svg>
+  </div>
+  <div class="inset">
+    <svg width="168" height="50" viewBox="0 0 168 50" aria-label="Strait of Hormuz schematic">
+      <path d="M0,4 L58,4 L74,16 L108,20 L134,8 L168,5 L168,26 L124,32 L92,28 L66,38 L32,34 L0,42 Z" fill="#dfe9f2" stroke="#1B365D" stroke-width="1.5"/>
+      <path d="M0,42 L32,34 L66,38 L92,28 L124,32 L168,26 L168,50 L0,50 Z" fill="#f3e3c2" stroke="#999" stroke-width="1"/>
+      <circle cx="32" cy="14" r="8" fill="#B81D13"/><text x="32" y="19" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">A</text>
+      <circle cx="84" cy="23" r="8" fill="#B81D13"/><text x="84" y="28" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">B</text>
+      <circle cx="108" cy="36" r="8" fill="#1B365D"/><text x="108" y="41" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">C</text>
+      <circle cx="56" cy="42" r="8" fill="#1B365D"/><text x="56" y="47" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">D</text>
+      <circle cx="142" cy="40" r="8" fill="#B81D13"/><text x="142" y="45" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">E</text>
+    </svg>
+    <span class="ititle">HORMUZ<br>INSET</span>
+    <div class="legend">
+      <div><b>A</b> KHARG &amp; GULF OF OMAN — 5 tankers sunk<br><b>B</b> STRAIT OF HORMUZ — shipping hit; $93.14<br><b>C</b> QESHM ISLAND — US hits IRGC base</div>
+      <div><b>D</b> BAHRAIN &amp; KUWAIT — 6 drones downed<br><b>E</b> AL-AZRAQ, JORDAN — missiles at US base</div>
+    </div>
   </div>
 </section>
 
 <section class="modules">
-  <article class="mod"><h4>KYIV HITS KERCH BRIDGE AGAIN; ENVOYS TALK PEACE</h4><p><b>BRIDGE DUEL:</b> Ukraine struck Kerch Bridge a 2nd straight night as Russia bombed Kyiv bridges. <b>DIPLOMACY:</b> Envoys Kushner &amp; Witkoff held pre-summit talks; UN: 372+ civilians killed in Oct.</p></article>
-  <article class="mod"><h4>WINTER COLD THREATENS 1.7M DISPLACED IN GAZA</h4><p><b>UN WARNING:</b> Cold &amp; flooding heighten mortality risks in tent camps. <b>ALLIED DEMAND:</b> UK, Australia, Canada &amp; Italy demand Israel allow unrestricted humanitarian aid.</p></article>
-  <article class="mod"><h4>HERZOG TAPS EISENKOT TO FORM GOVERNMENT</h4><p><b>NETANYAHU BYPASSED:</b> As the newly elected Knesset was sworn in, President Isaac Herzog tasked centrist Gadi Eisenkot with building a governing coalition.</p></article>
-  <article class="mod"><h4>TRUMP IN MANILA FOR QUAD AHEAD OF APEC</h4><p><b>INDO-PACIFIC TOUR:</b> Trump arrived in Manila for Quad summit talks before heading to China. <b>SHENZHEN:</b> APEC leaders' week opens; potential Trump–Putin bilateral.</p></article>
-  <article class="mod"><h4>COP31 IN ANTALYA FACES 144 DISPUTED ITEMS</h4><p><b>FINAL STRETCH:</b> UN climate negotiators in Turkey enter the decisive phase ahead of Friday's deadline, battling 144 unresolved brackets in the draft text.</p></article>
-  <article class="mod"><h4>NORTH KOREA FIRES BALLISTIC MISSILE EAST</h4><p><b>SEA OF JAPAN:</b> Pyongyang launched a ballistic missile toward eastern waters, raising tensions as Pacific leaders gather for Quad and APEC summits.</p></article>
+  <article class="mod"><h4>KYIV HITS KERCH BRIDGE AGAIN; ENVOYS TALK PEACE</h4><p><b>BRIDGE DUEL:</b> Ukraine struck Kerch Bridge a 2nd straight night; Russia bombed Kyiv bridges. <b>TALKS:</b> Kushner &amp; Witkoff meet; UN: 372+ civilians killed in Oct.</p></article>
+  <article class="mod"><h4>WINTER COLD THREATENS 1.7M DISPLACED IN GAZA</h4><p><b>UN WARNING:</b> Cold &amp; flooding heighten mortality risks in tent camps. <b>ALLIED DEMAND:</b> UK, Australia, Canada &amp; Italy demand Israel allow unrestricted aid.</p></article>
+  <article class="mod"><h4>HERZOG TAPS EISENKOT TO FORM GOVERNMENT</h4><p><b>NETANYAHU BYPASSED:</b> As the newly elected Knesset was sworn in, President Herzog tasked centrist Gadi Eisenkot with building a coalition.</p></article>
+  <article class="mod"><h4>TRUMP IN MANILA FOR QUAD AHEAD OF APEC</h4><p><b>INDO-PACIFIC TOUR:</b> Trump arrived in Manila for Quad talks before China. <b>SHENZHEN:</b> APEC week opens; potential Trump–Putin bilateral.</p></article>
+  <article class="mod"><h4>COP31 IN ANTALYA FACES 144 DISPUTED ITEMS</h4><p><b>FINAL STRETCH:</b> UN negotiators in Turkey enter the decisive phase before Friday's deadline, battling 144 unresolved brackets in the draft.</p></article>
+  <article class="mod"><h4>NORTH KOREA FIRES BALLISTIC MISSILE EAST</h4><p><b>SEA OF JAPAN:</b> Pyongyang launched a ballistic missile toward eastern waters as Pacific leaders gather for Quad and APEC summits.</p></article>
   <article class="mod"><h4>RUSSIAN AN-12 TRANSPORT CRASHES IN SIBERIA</h4><p><b>KEMEROVO REGION:</b> A Russian military Antonov An-12 transport plane crashed in Siberia, killing all 19 personnel aboard.</p></article>
-  <article class="mod"><h4>US AUDITS $12BN IN VENEZUELAN OIL &amp; MINERALS</h4><p><b>POST-MADURO REPORT:</b> One year after Nicolas Maduro's capture, the US State Dept. released a 53-page probe tracking $12bn in Venezuelan resource revenue.</p></article>
+  <article class="mod"><h4>US AUDITS $12BN IN VENEZUELAN OIL &amp; MINERALS</h4><p><b>POST-MADURO REPORT:</b> A year after Maduro's capture, the US State Dept. released a 53-page probe tracking $12bn in resource revenue.</p></article>
 </section>
 
 <section class="micros">
@@ -182,42 +181,44 @@
 </footer>
 
 <script>
-  // Dotted-grid world map: each character cell is a land dot.
-  var rows = [
-    "        xxxxxxxxxxxx                              xxxxxxxxxxxxxxxxxxxxxx      ",
-    "      xxxxxxxxxxxxxxxxx          xxxx    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx       ",
-    "       xxxxxxxxxxxxxxx            xxxxxxx   xxxxxxxxxxxxxxxxxxxxxxxxx           ",
-    "        xxxxxxxxxxxxx              xxxxxxxxx   xxxxxxxxxxxxxxxxxxxxx  x         ",
-    "         xxxxxxxxxxx                xxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx x        ",
-    "          xxxxxxxx                   xxxxxxxxxxxxx   xxxxxxxxxxx  xxxxx       ",
-    "            xxxx    xxxxx             xxxxxxxxxxx     xxxxxxx  xxxxxxxxx      ",
-    "                   xxxxxxxx            xxxxxxxxx               xxxxxxxxx      ",
-    "                    xxxxxxxx            xxxxxxx                  xxxxx  x     ",
-    "                     xxxxxx              xxxxx                  xxxxxxxx      ",
-    "                     xxxxx               xxxx                    xxxxxxx      ",
-    "                      xxx                                          xxxx  x    ",
-    "                      xx                                                            "
+  // Dotted-grid world map: dots are plotted on a grid wherever they fall
+  // inside one of the continent ellipses (cx, cy, rx, ry in px).
+  var ellipses = [
+    [165,17,102,15],[150,32,58,9],[122,41,24,5],           // North America
+    [238,49,27,6],[249,61,21,9],[258,7,24,6],              // South America + Greenland
+    [460,15,44,11],[446,24,20,6],                          // Europe
+    [480,37,48,14],[490,55,33,12],                         // Africa
+    [548,29,36,9],                                         // Middle East
+    [665,11,155,10],[612,31,46,10],[620,42,18,8],          // Asia band + India
+    [728,27,56,12],[748,43,26,7],[772,53,42,5],            // China, SE Asia, Indonesia
+    [812,23,10,12],                                        // Japan
+    [798,61,46,9],[862,69,13,3]                            // Australia + NZ
   ];
   var svg = document.getElementById('dotmap');
   var NS = 'http://www.w3.org/2000/svg';
-  var cw = 996 / 76, ch = 88 / 13;
-  for (var r = 0; r < rows.length; r++) {
-    for (var c = 0; c < rows[r].length; c++) {
-      if (rows[r][c] === 'x') {
+  for (var x = 7; x < 996; x += 13) {
+    for (var y = 4; y < 74; y += 6.4) {
+      var inside = false;
+      for (var i = 0; i < ellipses.length; i++) {
+        var e = ellipses[i];
+        var dx = (x - e[0]) / e[2], dy = (y - e[1]) / e[3];
+        if (dx * dx + dy * dy <= 1) { inside = true; break; }
+      }
+      if (inside) {
         var dot = document.createElementNS(NS, 'circle');
-        dot.setAttribute('cx', (c * cw + cw / 2).toFixed(1));
-        dot.setAttribute('cy', (r * ch + ch / 2).toFixed(1));
-        dot.setAttribute('r', 2.4);
+        dot.setAttribute('cx', x);
+        dot.setAttribute('cy', y.toFixed(1));
+        dot.setAttribute('r', 2.3);
         dot.setAttribute('fill', '#3a3a3a');
         svg.appendChild(dot);
       }
     }
   }
   var pins = [
-    [1,58.5,40,'red'],[2,21,36,'navy'],[3,53.5,28,'red'],[4,54.5,50,'red'],
-    [5,56.5,58,'navy'],[6,79,52,'navy'],[7,51.5,40,'navy'],[8,83,34,'red'],
-    [9,68,22,'red'],[10,19,44,'navy'],[11,47.5,30,'red'],[12,25.5,66,'navy'],
-    [13,45.5,24,'teal'],[14,43.5,58,'teal']
+    [1,56.5,38,'red'],[2,21.5,30,'navy'],[3,52,24,'red'],[4,53.5,46,'red'],
+    [5,55.5,56,'navy'],[6,78,52,'navy'],[7,50.5,38,'navy'],[8,82.5,30,'red'],
+    [9,67,16,'red'],[10,19.5,38,'navy'],[11,46.5,28,'red'],[12,24.5,64,'navy'],
+    [13,44.5,20,'teal'],[14,43,54,'teal']
   ];
   var wrap = document.getElementById('mapwrap');
   pins.forEach(function(p){
