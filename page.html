@@ -9,7 +9,7 @@
   body {
     background:#f7f1e3; color:#17222e;
     font-family:"Noto Sans", sans-serif;
-    padding:8px 16px 6px 16px;
+    padding:6px 16px 4px 16px;
     display:flex; flex-direction:column;
   }
   .serif { font-family:"Noto Serif", serif; }
@@ -21,11 +21,11 @@
     border-top:2.5px solid #10243E; border-bottom:1px solid #10243E;
     display:flex; justify-content:space-between; align-items:center;
     font-size:12.5px; font-weight:700; letter-spacing:2.2px; color:#10243E;
-    padding:3px 0 4px 0; white-space:nowrap;
+    padding:2px 0 3px 0; white-space:nowrap;
   }
 
   /* ---------- Hero date ---------- */
-  .hero { text-align:center; padding:4px 0 5px 0; border-bottom:2.5px solid #10243E; }
+  .hero { text-align:center; padding:2px 0 3px 0; border-bottom:2.5px solid #10243E; }
   .hero h1 {
     font-family:"Noto Serif", serif; font-weight:900; color:#10243E;
     font-size:66px; line-height:0.86; letter-spacing:-1px; margin:0;
@@ -37,9 +37,31 @@
     margin-top:3px;
   }
 
+  /* ---------- Info bars (stats + regions) ---------- */
+  .infobars { border-bottom:2px solid #10243E; }
+  .statsbar {
+    display:flex; justify-content:space-between; align-items:center;
+    font-size:11px; font-weight:800; letter-spacing:1.6px; color:#10243E;
+    padding:2px 0; line-height:1.2; white-space:nowrap;
+    border-bottom:1px solid #c9bfa5;
+  }
+  .statsbar b { color:#c0272d; font-weight:900; }
+  .regionbar {
+    font-size:11px; font-weight:800; letter-spacing:1.5px; color:#10243E;
+    padding:2px 0; line-height:1.2; white-space:nowrap; text-align:center;
+  }
+  .regionbar i { color:#c0272d; font-style:normal; }
+
+  /* ---------- Date check ---------- */
+  .datecheck { border:1.5px solid #10243E; background:#efe6cf; padding:4px 7px 5px 7px; margin-top:5px; }
+  .datecheck .dchead { font-size:11px; font-weight:800; letter-spacing:1.4px; color:#c0272d; margin:0 0 2px 0; }
+  .datecheck .dc { font-size:11.5px; line-height:1.25; color:#232d38; }
+  .datecheck .dc b { color:#10243E; }
+  .datecheck .tick { color:#c0272d; font-weight:900; }
+
   /* ---------- Panels ---------- */
   .panels { display:flex; gap:0; border-bottom:2px solid #10243E; }
-  .panel { flex:1; padding:6px 10px 5px 10px; overflow:hidden; position:relative; }
+  .panel { flex:1; padding:4px 10px 4px 10px; overflow:hidden; position:relative; }
   .panel + .panel { border-left:1px solid #c9bfa5; }
   .panel:first-child { padding-left:0; }
   .panel:last-child { padding-right:0; }
@@ -57,7 +79,7 @@
 
   /* ---------- Modules ---------- */
   .modules { display:grid; grid-template-columns:1fr 1fr 1fr; border-bottom:2px solid #10243E; }
-  .mod { padding:4px 10px 3px 10px; overflow:hidden; }
+  .mod { padding:3px 10px 2px 10px; overflow:hidden; }
   .mod:nth-child(3n+1) { padding-left:0; }
   .mod:nth-child(3n) { padding-right:0; }
   .mod:nth-child(n+4) { border-top:1px solid #c9bfa5; }
@@ -72,7 +94,7 @@
   /* ---------- By the numbers ---------- */
   .numbers {
     display:flex; align-items:center; gap:14px;
-    border-bottom:2px solid #10243E; padding:2px 0 3px 0;
+    border-bottom:2px solid #10243E; padding:1px 0 2px 0;
   }
   .numbers .lbl { font-size:11px; font-weight:800; letter-spacing:1.6px; color:#c0272d; white-space:nowrap; line-height:1.25; }
   .numitem { display:flex; align-items:center; gap:7px; flex:1; }
@@ -80,7 +102,7 @@
   .numitem .cap { font-size:11px; line-height:1.15; color:#3c4652; }
 
   /* ---------- Bottom split ---------- */
-  .bottom { display:flex; gap:16px; flex:1; min-height:0; padding-top:4px; }
+  .bottom { display:flex; gap:16px; flex:1; min-height:0; padding-top:3px; }
   .leftcol { width:36%; display:flex; flex-direction:column; }
   .rightcol { width:64%; display:flex; flex-direction:column; }
   .colhead { font-size:12px; font-weight:800; letter-spacing:1.4px; color:#10243E; margin:0 0 3px 0; white-space:nowrap; }
@@ -100,13 +122,13 @@
   }
   .mapcap { font-size:11.5px; font-style:italic; font-family:"Noto Serif", serif; color:#3c4652; margin-top:3px; }
   .microlist { columns:2; column-gap:14px; flex:1; min-height:0; overflow:hidden; }
-  .microlist div { font-size:13px; line-height:1.10; color:#232d38; margin:0 0 1.5px 0; break-inside:avoid; }
+  .microlist div { font-size:13px; line-height:1.06; color:#232d38; margin:0 0 1.2px 0; break-inside:avoid; }
   .microlist b { color:#10243E; }
   .microlist .n { color:#c0272d; font-weight:800; }
 
   /* ---------- Footer ---------- */
   footer {
-    border-top:2.5px solid #10243E; padding-top:3px;
+    border-top:2.5px solid #10243E; padding-top:2px;
     font-size:10.5px; line-height:1.3; color:#3c4652;
   }
 </style>
@@ -144,16 +166,42 @@
   <div class="strapline">Every story on this page happened, or was first reported, on this day.</div>
 </section>
 
+<div class="infobars">
+  <div class="statsbar">
+    <span><b>34</b> STORIES</span>
+    <span><b>6</b> CONTINENTS</span>
+    <span><b>10</b> SOURCES</span>
+    <span><b>1</b> DAY</span>
+    <span><b>ONE</b> PAGE</span>
+  </div>
+  <div class="regionbar">WORLD <i>&middot;</i> EUROPE <i>&middot;</i> ASIA-PACIFIC <i>&middot;</i> AMERICAS <i>&middot;</i> MIDDLE EAST <i>&middot;</i> AFRICA <i>&middot;</i> BUSINESS <i>&middot;</i> TECH <i>&middot;</i> SPORT</div>
+</div>
+
 <section class="panels">
   <article class="panel">
-    <svg class="art" viewBox="0 0 300 62" preserveAspectRatio="none" aria-label="Tanker, jet and island">
+    <svg class="art" viewBox="0 0 300 62" preserveAspectRatio="none" aria-label="Hero scene: tanker, jet, island and sun over the Strait of Hormuz">
+      <circle cx="28" cy="9" r="6.5" fill="#c0272d"/>
+      <g stroke="#c0272d" stroke-width="1.6" opacity="0.75">
+        <path d="M28 0 L28 1.5 M12 3 L15 5.5 M44 3 L41 5.5 M10 14 L15 12.5 M46 14 L41 12.5" />
+      </g>
       <path d="M14 30 Q80 6 150 14" fill="none" stroke="#c0272d" stroke-width="4.5"/>
       <path d="M120 38 Q190 12 262 18" fill="none" stroke="#c0272d" stroke-width="4.5"/>
+      <path d="M96 44 Q150 30 214 34" fill="none" stroke="#10243E" stroke-width="2" stroke-dasharray="5 4" opacity="0.8"/>
       <path d="M148 8 L162 11 L150 17 L140 14 Z" fill="#c0272d"/>
       <path d="M258 12 L272 15 L260 21 L250 18 Z" fill="#c0272d"/>
       <path d="M216 4 L252 8 L268 13 L250 15 L240 22 L236 15 L218 13 L206 10 Z" fill="#10243E"/>
       <path d="M236 8 L246 0 L248 9 Z" fill="#10243E"/>
+      <g fill="#8a8f96" opacity="0.55">
+        <ellipse cx="53" cy="11" rx="4.5" ry="2.6"/>
+        <ellipse cx="47" cy="7" rx="3.4" ry="2"/>
+        <ellipse cx="42" cy="4" rx="2.4" ry="1.4"/>
+      </g>
       <rect x="0" y="48" width="300" height="14" fill="#10243E"/>
+      <g stroke="#f7f1e3" stroke-width="1.6" fill="none" opacity="0.85">
+        <path d="M96 53 q6 -3 12 0 q6 3 12 0"/>
+        <path d="M150 57 q6 -3 12 0 q6 3 12 0"/>
+        <path d="M238 52 q6 -3 12 0 q6 3 12 0"/>
+      </g>
       <rect x="18" y="54" width="52" height="3.5" fill="#f7f1e3"/>
       <rect x="196" y="54" width="60" height="3.5" fill="#f7f1e3"/>
       <path d="M18 36 L142 36 L132 48 L30 48 Z" fill="#10243E"/>
@@ -161,6 +209,8 @@
       <rect x="78" y="29" width="44" height="7" fill="#c0272d"/>
       <rect x="54" y="16" width="5" height="10" fill="#10243E"/>
       <circle cx="56.5" cy="13" r="3.5" fill="#c0272d"/>
+      <path d="M282 44 L296 44 L293 48 L284 48 Z" fill="#10243E"/>
+      <rect x="288" y="40" width="2.5" height="4" fill="#10243E"/>
       <path d="M188 48 L206 28 L220 38 L236 26 L254 38 L272 48 Z" fill="#10243E"/>
       <rect x="216" y="18" width="7" height="12" fill="#c0272d"/>
     </svg>
@@ -288,6 +338,12 @@
       <div class="alsodot" style="left:87.5%;top:31.0%" title="Japan"></div>
     </div>
     <div class="mapcap">Numbered dots mark stories 1&ndash;9; small dots, the rest.</div>
+    <div class="datecheck">
+      <p class="dchead">DATE CHECK &mdash; VERIFIED FOR THIS PAGE</p>
+      <div class="dc"><span class="tick">&#10003;</span> <b>Nvidia revenue $115.8bn, up 103%</b> &mdash; story 3 &middot; Reuters</div>
+      <div class="dc"><span class="tick">&#10003;</span> <b>Knesset elects its speaker 66&ndash;52</b> &mdash; story 5 &middot; AP</div>
+      <div class="dc"><span class="tick">&#10003;</span> <b>Voyager 1 one light-day from Earth</b> &mdash; story 12 &middot; NASA</div>
+    </div>
   </div>
   <div class="rightcol">
     <p class="colhead">ALSO ON WEDNESDAY 18 NOVEMBER <span class="red">&mdash; 25 MORE STORIES</span></p>
